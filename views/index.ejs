@@ -1,0 +1,113 @@
+<%- include('partials/header.ejs') %>
+
+<div id="tutorial" class="base">
+    <div class="tut_background">
+        <div class="filter"></div>
+        <img src="./img/Tutorial.jpg" alt="">
+    </div>
+    <div class="base_foreground">
+        <div class="text">
+            <p class="p1">Tutorials.</p>
+            <p class="p2">Just starting out in the cyber security space? <br>
+                Watch these beginner-friendly videos to get all caught up with different <br>
+                types of vulnerabilities, and a lot more.
+            </p>
+            <form action="/tutorial" method="get">
+                <button type="submit" class="wrapper take-there"><i class="fas fa-chevron-right fa-5x"></i><br>Take Me There!</</button> 
+            </form>
+        </div> 
+        <div>
+                <div class="slider">
+                    <ul class="ul-link">
+                        <li><a href="#tutorial" class="butn butn-active "><i class="fas fa-circle"></i></a></li>
+                        <li><a href="#resources" class="butn "><i class="fas fa-circle"></i></a></li>
+                        <li><a href="#lab" class="butn "><i class="fas fa-circle"></i></a></li>
+                        <li><a href="#about" class="butn "><i class="fas fa-circle"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="resources" class="base">
+    <div class="res_background">
+        <div class="filter"></div>
+        <img src="./img/Resources.jpg" alt="">
+    </div>
+    <div class="base_foreground">
+        <div class="text">
+            <p class="p1">Resources.</p>
+            <p class="p2">Want to expand your knowledge base, but videos aren't your thing. <br>
+                Read about the new vulnerabilities, recommended books and lot more.
+            </p>
+            <form action="/resource" method="get">
+                <button type="submit" class="wrapper take-there"><i class="fas fa-chevron-right fa-5x"></i><br>Take Me There!</</button> 
+            </form>
+        </div>
+        <div>
+            <div class="slider">
+                <ul class="ul-link">
+                    <li><a href="#tutorial" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#resources" class="butn butn-active "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#lab" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#about" class="butn "><i class="fas fa-circle"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="lab" class="base">
+    <div class="lab_background">
+        <div class="filter"></div>
+        <img src="./img/Labs.jpg" alt="">
+    </div>
+    <div class="base_foreground">
+        <div class="text">
+            <p class="p1">Labs.</p>
+            <p class="p2">Practice your art in these specially created websites, which are <br>
+                vulnerable to a variety of different attacks.
+            </p>
+            <form action="/lab" method="get">
+                <button type="submit" class="wrapper take-there"><i class="fas fa-chevron-right fa-5x"></i><br>Take Me There!</</button> 
+            </form>
+        </div>
+        <div>
+            <div class="slider">
+                <ul class="ul-link">
+                    <li><a href="#tutorial" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#resources" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#lab" class="butn butn-active "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#about" class="butn "><i class="fas fa-circle"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" class="base">
+    <div class="about_background">
+        <div class="filter"></div>
+        <img src="./img/About.jpg" alt="">
+    </div>
+    <div class="base_foreground">
+        <div class="text">
+            <p class="p1">About Us.</p>
+            <p class="p2">Stay in touch with us with our weekly newsletter, or contact us by <br>
+                getting in touch with any of our social media handles.
+            </p>
+            <form action="/about" method="get">
+                <button type="submit" class="wrapper take-there"><i class="fas fa-chevron-right fa-5x"></i><br>Take Me There!</</button> 
+            </form>
+        </div>
+        <div>
+            <div class="slider">
+                <ul class="ul-link">
+                    <li><a href="#tutorial" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#resources" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#lab" class="butn "><i class="fas fa-circle"></i></a></li>
+                    <li><a href="#about" class="butn butn-active"><i class="fas fa-circle"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

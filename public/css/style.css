@@ -1,0 +1,230 @@
+header{
+    position: fixed;
+    top: 1vh;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+nav #logo{
+    padding-top: 5vh;
+    height: 90%;
+    width: 40%;
+}
+
+nav #link{
+    width: 100%;
+}
+
+nav #link ul{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+nav #link li{
+    margin-left: 1.2rem;
+    font-size: 2.1rem;
+    font-family: TimesNewRomanPSMT, Times New Roman;
+    color: #fff;
+}
+
+nav #link li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-family: TimesNewRomanPSMT, Times New Roman;
+    overflow: hidden;
+}
+
+#home .home_background img{
+    position: absolute;
+    top: 1%;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home .home_foreground{
+    height: 100%;
+    width: 80%;
+    margin: 10%;
+}
+
+#home .home_foreground #p1{
+    color: #fff;
+    font-size: 48px
+}
+
+#home .home_foreground #p2{
+    margin-top: 15%;
+    color: #fff;
+    font-size: 40px
+}
+
+#home .home_foreground button {
+    margin: 30px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #7474BF 0%, #4fff84 51%, #7474BF 100%)
+}
+#home .home_foreground button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 24px 30px 36px;
+    background-position: right center;}
+
+    #home .home_foreground button a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+.base .tut_background img{
+    position: absolute;
+    top: -90%;
+    z-index: -1;
+    width: 100%;
+}
+
+.base .res_background img{
+    position: absolute;
+    object-fit: fill;
+    top: -10%;
+    z-index: -1;
+    width: 100%;
+}
+
+.base .lab_background img{
+    position: absolute;
+    object-fit: fill;
+    top: -10%;
+    z-index: -1;
+    width: 100%;
+}
+
+.base .about_background img{
+    position: absolute;
+    object-fit: fill;
+    top: -10%;
+    z-index: -1;
+    width: 100%;
+}
+
+/*======================================Global Style===========================*/
+.base {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-family: TimesNewRomanPSMT, 'Times New Roman';
+    overflow: hidden;
+}
+
+.base .base_foreground{
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    margin: 10%;
+}
+
+.base .base_foreground .text{
+    height: 100vh;
+    width: 90%;
+}
+
+.take-there{
+    margin-top: 6%;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+}
+
+.base .base_foreground .slider{
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    margin-top: 100%;
+}
+
+.ul-link{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.wrapper {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.butn{
+    display: block;
+    text-decoration: none;
+    margin-top: 105%;
+    width: 100%;
+    color: #4a4a48;
+}
+.butn-active{
+    color: #4fff84;
+}
+
+.filter{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: #000;
+}
+
+.p1{
+    margin: 8% 0 3%;
+    font-size: 80px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.p2 {
+    margin: 2% 0 5%;    
+    font-size: 33px;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+    background-color: #000000;
+}
