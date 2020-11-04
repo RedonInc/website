@@ -29,11 +29,11 @@ app.route('/resource')
     })
 app.route('/lab')
     .get(function (req, res) {
-        res.send("Labs")
+        res.render("lab")
     })
 app.route('/about')
     .get(function (req, res) {
-        res.send("About Us")
+        res.render("team")
     })
 
 app.listen(process.env.PORT || 3000, function () {
