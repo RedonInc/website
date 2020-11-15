@@ -1,4 +1,5 @@
 const express = require("express");
+var lab = require("./config.json");
 
 const app = express();
 
@@ -20,16 +21,22 @@ app.route('/index')
 
 app.route('/tutorial')
     .get(function (req, res) {
-        res.send("Tutorial")
+        res.render('underC')
     })
 
 app.route('/resource')
     .get(function (req, res) {
-        res.send("Resource")
+        res.render('underC')
     })
 app.route('/lab')
     .get(function (req, res) {
-        res.render("lab")
+        res.render("lab", 
+        {
+            labxss : lab.xss,
+            labsqli : lab.sqli,
+            labCI : lab.ci,
+
+        })
     })
 app.route('/about')
     .get(function (req, res) {

@@ -1,0 +1,5 @@
+{
+    "xss" : "https://www.xss.com",
+    "sqli" : "https://www.sqli.com",
+    "ci" : "https://www.ci.com"
+}
